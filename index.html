@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reseter.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/4f2a91077e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="section">
+        <div class="settings">
+            <input type="color" value="#080808" id="color">
+            <button class="tool selected">Color Mode</button>
+            <button class="tool">Rainbow Mode</button>
+            <button class="tool">Darken</button>
+            <button class="tool">Lighten</button>
+            <button class="tool">Eraser</button>
+            <input type="range" min="2" max="32" value="32" id="slider">
+            <p class="label" id="label">32x32 Grid</p>
+            <button id="reset">Reset Canvas</button>
+        </div>
+        <div class="frame">
+            <div class="screen" id="screen"></div>
+            <div class="controls">
+                <div class="knob">
+                    <i class="fa-solid fa-sort-up arrow"></i>
+                </div>
+                <p class="title">Etch-a-Sketch</p>
+                <div class="knob">
+                    <i class="fa-solid fa-sort-up arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> David McDonald | View GitHub Profile</p>
+    </footer>
+</body>
+</html>
