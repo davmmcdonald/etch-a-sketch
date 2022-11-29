@@ -46,9 +46,9 @@ function changeColor() {
         const green = Math.floor(Math.random() * 255) + 1;
         event.target.style.backgroundColor = `rgb(${red},${blue},${green},1)`;
     } else if (selectedTool === 2 && !event.target.classList.contains('outline')) {
-        event.target.style.opacity = parseFloat(event.target.style.opacity) + 0.2;
+        event.target.style.opacity = parseFloat(event.target.style.opacity) + 0.1;
     } else if (selectedTool === 3 && !event.target.classList.contains('outline')) {
-        event.target.style.opacity = parseFloat(event.target.style.opacity) - 0.2;
+        event.target.style.opacity = parseFloat(event.target.style.opacity) - 0.1;
     } else if (selectedTool === 4) {
         event.target.style.backgroundColor = 'white';
         event.target.style.opacity = '1';
