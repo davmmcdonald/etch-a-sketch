@@ -36,17 +36,18 @@ document.addEventListener('mouseup',() => mouseDown = false);
 // Change color based on selected tool
 function changeColor() {
     if (mouseDown === false) return;
-    event.target.classList.remove('outline');
     if (selectedTool === 0) {
+        event.target.classList.remove('outline');
         event.target.style.backgroundColor = color.value;
     } else if (selectedTool === 1) {
+        event.target.classList.remove('outline');
         const red = Math.floor(Math.random() * 255) + 1;
         const blue = Math.floor(Math.random() * 255) + 1;
         const green = Math.floor(Math.random() * 255) + 1;
         event.target.style.backgroundColor = `rgb(${red},${blue},${green},1)`;
-    } else if (selectedTool === 2) {
+    } else if (selectedTool === 2 && !event.target.classList.contains('outline')) {
         event.target.style.opacity = parseFloat(event.target.style.opacity) + 0.1;
-    } else if (selectedTool === 3) {
+    } else if (selectedTool === 3 && !event.target.classList.contains('outline')) {
         event.target.style.opacity = parseFloat(event.target.style.opacity) - 0.1;
     } else if (selectedTool === 4) {
         event.target.style.backgroundColor = 'white';
