@@ -33,10 +33,10 @@ body {
 }
 
 .frame {
-    background-color: red;
+    background-color: #FF4500;
     padding: 16px;
     border-radius: 4px;
-    box-shadow: 4px 4px rgb(255,255,255,0.5) inset, -4px -4px rgb(0,0,0,0.25) inset;
+    box-shadow: 2px 2px rgb(255,255,255,0.35) inset, -2px -2px rgb(0,0,0,0.15) inset;
 }
 
 .screen {
@@ -45,7 +45,7 @@ body {
     margin-bottom: 16px;
     background-color: white;
     border-radius: 4px;
-    box-shadow: 2px 2px rgb(255,255,255,0.5), -2px -2px rgb(0,0,0,0.25);
+    box-shadow: 2px 2px rgb(255,255,255,0.35), -2px -2px rgb(0,0,0,0.15);
     display: grid;
     overflow: hidden;
     cursor: crosshair;
@@ -64,6 +64,8 @@ body {
 .title {
     font-family: 'Pacifico', cursive;
     font-size: 32px;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0,0,0,0.5);
 }
 
 .knob {
@@ -73,7 +75,7 @@ body {
     justify-content: center;
     background-color: lightgrey;
     border-radius: 50%;
-    box-shadow: 4px 4px rgb(255,255,255,0.5) inset, -4px -4px rgb(0,0,0,0.25) inset, 4px 4px 8px rgb(0,0,0,0.25);
+    box-shadow: 3px 3px rgb(255,255,255,0.35) inset, -3px -3px rgb(0,0,0,0.15) inset, 4px 4px 8px rgb(0,0,0,0.25);
 }
 
 .arrow {
